@@ -149,7 +149,7 @@ def main():
                 pdf_out_path = os.path.join(dir_path, pdf_out_name)
             else:
                 pdf_out_path = pdf_out_name
-        if args.utf8:
+        if not args.xml:
             update_info = "update_info_utf8"
         else:
             update_info = "update_info"
